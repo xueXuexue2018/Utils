@@ -1,0 +1,18 @@
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <AFNetworking.h>
+#import <Masonry.h>
+
+#define WIDTH_SCREEN   [UIScreen mainScreen].bounds.size.width
+#define HEIGHT_SCREEN  [UIScreen mainScreen].bounds.size.height
+
+#define     PATH_DOCUMENT  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+#define PATH_SQL        [PATH_DOCUMENT stringByAppendingPathComponent:@"/standarOne.sqlite3"]
+#define PATH_FILE       [PATH_DOCUMENT stringByAppendingPathComponent:@"/path"]
+#define  PATH_HEADIMG    [PATH_DOCUMENT stringByAppendingPathComponent:@"/Image"]
+#define PATH_Plugin     [PATH_DOCUMENT stringByAppendingPathComponent:@"/plugin"]
+
+#define    kRGB(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(r)/255.0 blue:(r)/255.0 alpha:a]
+
+#endif /* PrefixHeader_pch */
